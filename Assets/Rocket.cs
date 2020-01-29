@@ -10,6 +10,7 @@ public class Rocket : MonoBehaviour {
     [SerializeField] float rcsThrust = 100f;
     [SerializeField] float mainThrust = 100f;
 
+    [SerializeField] private ParticleSystem thrustEffect;
     // Use this for initialization
     void Start () {
         rigidBody = GetComponent<Rigidbody>();
@@ -43,6 +44,11 @@ public class Rocket : MonoBehaviour {
         if (Input.GetKey(KeyCode.Space)) // can thrust while rotate
         {
             rigidBody.AddRelativeForce(Vector3.up * mainThrust);
+            if (!thrustEffect.isPlaying)
+            {
+                thrustEffect.Play(); 
+            }
+            
             if (!audioSource.isPlaying)
             {
                 audioSource.Play();
@@ -50,6 +56,7 @@ public class Rocket : MonoBehaviour {
         }
         else
         {
+            thrustEffect.Stop(); 
             audioSource.Stop();
         }
     }
