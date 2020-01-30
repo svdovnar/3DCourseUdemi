@@ -22,6 +22,8 @@ public class Rocket : MonoBehaviour {
         Thrust();
         Rotate();
 	}
+
+    
     void OnCollisionEnter(Collision collision)
     {
         switch (collision.gameObject.tag)
