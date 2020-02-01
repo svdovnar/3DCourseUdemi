@@ -42,7 +42,7 @@ public class Rocket : MonoBehaviour {
     }
     private void Thrust()
     {
-        if (Input.GetKey(KeyCode.Space)) // can thrust while rotate
+        if (Input.GetKey(KeyCode.UpArrow)) // can thrust while rotate
         {
             rigidBody.AddRelativeForce(Vector3.up * mainThrust);
             if (!audioSource.isPlaying)
@@ -60,11 +60,11 @@ public class Rocket : MonoBehaviour {
         rigidBody.freezeRotation = true;
         float rotationThisFrame = rcsThrust * Time.deltaTime;
         
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Rotate(Vector3.forward * rotationThisFrame);
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.Rotate(-Vector3.forward * rotationThisFrame);
         }
