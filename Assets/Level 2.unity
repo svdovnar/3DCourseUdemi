@@ -43,7 +43,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -89,7 +89,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: b6fe5af7e51fc2f4fb51b9615bc17bf5,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -124,7 +125,7 @@ GameObject:
   - component: {fileID: 23069175}
   m_Layer: 0
   m_Name: Obsticles
-  m_TagString: Untagged
+  m_TagString: Dead
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -377,6 +378,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0.316
       objectReference: {fileID: 0}
+    - target: {fileID: 1935107239675496, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 65414050812763364, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
@@ -483,6 +488,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 19.304409
       objectReference: {fileID: 0}
+    - target: {fileID: 1935107239675496, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65414050812763364, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
@@ -537,6 +546,10 @@ Prefab:
     - target: {fileID: 4033808348531994, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
       propertyPath: m_LocalScale.z
       value: 15.565782
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935107239675496, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
+      propertyPath: m_TagString
+      value: Dead
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
@@ -630,6 +643,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0.316
       objectReference: {fileID: 0}
+    - target: {fileID: 1935107239675496, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
@@ -700,6 +717,10 @@ Prefab:
     - target: {fileID: 4033808348531994, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0.316
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935107239675496, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
+      propertyPath: m_TagString
+      value: Dead
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -824,6 +845,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 19.304409
       objectReference: {fileID: 0}
+    - target: {fileID: 1935107239675496, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
@@ -894,6 +919,10 @@ Prefab:
     - target: {fileID: 4033808348531994, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 92.505005
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935107239675496, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
+      propertyPath: m_TagString
+      value: Dead
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65414050812763364, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
@@ -1053,6 +1082,10 @@ Prefab:
       propertyPath: m_Name
       value: obsticle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1935107239675496, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
   m_IsPrefabParent: 0
@@ -1136,6 +1169,10 @@ Prefab:
     - target: {fileID: 4033808348531994, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
       propertyPath: m_LocalScale.z
       value: 13.325554
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935107239675496, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
+      propertyPath: m_TagString
+      value: Dead
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -1268,6 +1305,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -19.541
       objectReference: {fileID: 0}
+    - target: {fileID: 1935107239675496, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
+      propertyPath: m_TagString
+      value: Dead
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65414050812763364, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
@@ -1336,6 +1377,10 @@ Prefab:
     - target: {fileID: 1935107239675496, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
       propertyPath: m_Name
       value: obsticle (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935107239675496, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
+      propertyPath: m_TagString
+      value: Dead
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -1407,6 +1452,10 @@ Prefab:
     - target: {fileID: 4033808348531994, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 96.261
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935107239675496, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
+      propertyPath: m_TagString
+      value: Dead
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65414050812763364, guid: d1d59d513fae91d40abecc784da47efb, type: 2}

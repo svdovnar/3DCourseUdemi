@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65414050812763364}
   m_Layer: 0
   m_Name: obsticle
-  m_TagString: Fuel
+  m_TagString: Dead
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

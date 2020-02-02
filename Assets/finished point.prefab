@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 23696059321496540}
   m_Layer: 0
   m_Name: finished point
-  m_TagString: Friendly
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,7 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 63fa917e0fc1432408715f49ae59a8e8, type: 2}
+  - {fileID: 2100000, guid: b44251a5b86fd5b4f9c1f579891e3c6c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
