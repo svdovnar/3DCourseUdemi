@@ -2,22 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour {
+public class Oscilator : MonoBehaviour {
 
 	// Use this for initialization
-
 	[SerializeField] Vector3 movementVector;
 	[Range(0, 1)] [SerializeField] float movementFactor;
 	Vector3 startingPos;
-	
-	void Start () 
+
+	void Start()
 	{
 		startingPos = transform.position;
-		
+
 	}
-	
+
 	// Update is called once per frame
-	void Update () 
+	void Update()
 	{
 		Vector3 offset = movementVector * movementFactor;
 		transform.position = startingPos + offset;
