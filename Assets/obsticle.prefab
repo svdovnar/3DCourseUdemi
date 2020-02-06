@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33274223773893974}
   - component: {fileID: 23071327942601226}
   - component: {fileID: 65911107037372966}
-  - component: {fileID: 114614309226402294}
+  - component: {fileID: 114027303953769932}
   m_Layer: 0
   m_Name: obsticle
   m_TagString: Dead
@@ -96,7 +96,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114614309226402294
+--- !u!114 &114027303953769932
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -107,5 +107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2480fbdbe2084d442ad5d837e72d3242, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementVector: {x: 5, y: 0, z: 0}
+  movementVector: {x: 0, y: 0, z: 0}
+  period: 2
   movementFactor: 0

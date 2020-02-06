@@ -1352,10 +1352,20 @@ Prefab:
       propertyPath: m_Name
       value: obsticle (11)
       objectReference: {fileID: 0}
-    - target: {fileID: 114614309226402294, guid: d1d59d513fae91d40abecc784da47efb,
+    - target: {fileID: 114027303953769932, guid: d1d59d513fae91d40abecc784da47efb,
         type: 2}
-      propertyPath: movementFactor
+      propertyPath: movementVector.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114027303953769932, guid: d1d59d513fae91d40abecc784da47efb,
+        type: 2}
+      propertyPath: movementVector.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114027303953769932, guid: d1d59d513fae91d40abecc784da47efb,
+        type: 2}
+      propertyPath: movementVector.x
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d1d59d513fae91d40abecc784da47efb, type: 2}
