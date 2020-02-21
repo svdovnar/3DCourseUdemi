@@ -1,4 +1,5 @@
 ﻿
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,6 +19,7 @@ public class Rocket : MonoBehaviour {
     [SerializeField] ParticleSystem deathsoundParticles;
     enum State { Alive, Dying, Transcending };
     State state = State.Alive;
+    bool collisionsDisabled = false;
 
     // Use this for initialization
     void Start () 
@@ -34,11 +36,24 @@ public class Rocket : MonoBehaviour {
         RespondToThrustInput();
         RespondToRotateInput();
 	    }
+        RespondToDebugKeys();
     }
-    
+
+    private void RespondToDebugKeys()
+    {
+       if (Input.GetKeyDown(KeyCode.L))
+        {
+            LoadNextLevel();
+        }
+       else if (Input.GetKeyDown(KeyCode.C))
+        {
+            collisionsDisabled = !collisionsDisabled;
+        }
+    }
+
     void OnCollisionEnter(Collision collision)
     {
-        if (state != State.Alive) { return; }
+        if (state != State.Alive || collisionsDisabled) { return; }
 
         switch (collision.gameObject.tag)
         {
@@ -71,10 +86,16 @@ public class Rocket : MonoBehaviour {
         Invoke("LoadFirstLevel", levelLoadDelay);
     }
 
-
+  
     private void LoadNextLevel()
     {
-        SceneManager.LoadScene(1);
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 1;
+        if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
+        {
+            nextSceneIndex = 0;
+        }
+        SceneManager.LoadScene(nextSceneIndex);
     }
     private void LoadFirstLevel()
     {
